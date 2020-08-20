@@ -1,5 +1,4 @@
 ﻿using System.Threading;
-using System.Threading.Tasks;
 
 namespace Integral.Abstractions
 {
@@ -8,8 +7,7 @@ namespace Integral.Abstractions
         void Execute();
     }
 
-    public interface Executable<Return>
-        where Return : Task
+    public interface Executable<out Return>
     {
         Return Execute(CancellationToken cancellationToken);
     }

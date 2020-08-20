@@ -5,4 +5,10 @@
     {
         void Consume(Consumable consumable);
     }
+
+    public interface Consumer<in Consumable, out Return>
+        where Consumable : notnull
+    {
+        Return Consume(Consumable consumable);
+    }
 }
