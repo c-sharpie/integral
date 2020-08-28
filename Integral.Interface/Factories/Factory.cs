@@ -1,8 +1,8 @@
 ﻿namespace Integral.Factories
 {
-    public interface Factory<out Product>
-        where Product : notnull
+    public interface Factory<out Creation>
+        where Creation : notnull
     {
-        Product Create();
+        Creation Create();
     }
 }
