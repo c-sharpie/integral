@@ -7,7 +7,7 @@ namespace Integral.Collections
         where Key : notnull, Enum
         where Element : notnull
     {
-        protected EnumeratedCollection()
+        public EnumeratedCollection()
         {
             foreach (Key enumeration in EnumFunction.GetValues<Key>())
             {
