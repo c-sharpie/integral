@@ -4,6 +4,6 @@
         where Key : notnull
         where Element : notnull
     {
-        Element this[Key key] { get; set;  }
+        Element this[Key key] { get; set; }
     }
 }
