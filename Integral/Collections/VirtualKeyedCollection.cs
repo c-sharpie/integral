@@ -10,11 +10,7 @@ namespace Integral.Collections
 
         public VirtualKeyedCollection(KeyedCollection<Key, Element> keyedCollection) : base(keyedCollection) => this.keyedCollection = keyedCollection;
 
-        public Element this[Key key]
-        {
-            get => keyedCollection[key];
-            set => keyedCollection[key] = value;
-        }
+        public Element this[Key key] => keyedCollection[key];
 
         public virtual bool Add(Key key, Element element) => keyedCollection.Add(key, element);
 

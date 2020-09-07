@@ -8,11 +8,7 @@
 
         protected VirtualDirectCollection(DirectCollection<Key, Element> directCollection) : base(directCollection) => this.directCollection = directCollection;
 
-        public Element this[Key key]
-        {
-            get => directCollection[key];
-            set => directCollection[key] = value;
-        }
+        public Element this[Key key] => directCollection[key];
 
         public virtual bool Add(Element element) => directCollection.Add(element);
 
