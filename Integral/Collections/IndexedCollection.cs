@@ -8,6 +8,6 @@ namespace Integral.Collections
     {
         public new bool Add(Key key, Element element) => TryAdd(key, element);
 
-        public bool Peek(Key key, out Element element) => TryGetValue(key, out element);
+        public bool Peek(Key key, out Element element) => TryGetValue(key, out element!);
     }
 }

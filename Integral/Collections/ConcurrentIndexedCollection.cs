@@ -8,8 +8,8 @@ namespace Integral.Collections
     {
         public bool Add(Key key, Element element) => TryAdd(key, element);
 
-        public bool Peek(Key key, out Element element) => TryGetValue(key, out element);
+        public bool Peek(Key key, out Element element) => TryGetValue(key, out element!);
 
-        public bool Remove(Key key, out Element element) => TryRemove(key, out element);
+        public bool Remove(Key key, out Element element) => TryRemove(key, out element!);
     }
 }
